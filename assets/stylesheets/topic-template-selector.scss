@@ -1,0 +1,43 @@
+.template-choices {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.template-card {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 12px;
+  padding: 1.5em;
+  border: 1px solid var(--primary-300);
+  border-radius: 8px;
+  cursor: pointer;
+
+  &.selected {
+    border-color: var(--tertiary);
+    background-color: var(--tertiary-low);
+  }
+
+  .d-icon {
+    font-size: 1.8em;
+    color: var(--tertiary);
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    &__title {
+      font-weight: bold;
+    }
+
+    &__description {
+      font-size: var(--font-down-1);
+      color: var(--primary-high);
+    }
+  }
+}
+
+.confirm-button {
+  margin-left: auto;
+}

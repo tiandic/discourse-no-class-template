@@ -1,0 +1,11 @@
+zh_CN:
+  js:
+    discourse-no-class-template:
+      no_template_options_title: "无模板"
+      no_template_options_description: "不使用模板，打开空的编辑器"
+      template_description: "使用提问模板填充编辑器"
+      confirm: "确认"
+      template: "提问模板 (新手提问必选)"
+      selector_title: "选择话题模板"
+      open_directly_with_no_template_checkbox_text: "下次创建话题时，直接通过无模板打开编辑器"
+

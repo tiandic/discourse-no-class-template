@@ -1,0 +1,10 @@
+en:
+  js:
+    discourse-no-class-template:
+      no_template_options_title: "No template"
+      no_template_options_description: "Open an empty editor without using templates"
+      template_description: "Open an empty editor without using templates"
+      confirm: "confirm"
+      template: "Question Template (Must-Choose for Newbies)"
+      selector_title: "Choose a topic template"
+      open_directly_with_no_template_checkbox_text: "The next time you create a topic, open the editor directly from the templateless"
