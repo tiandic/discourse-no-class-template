@@ -2,7 +2,9 @@
 这个插件可以创建一个无关类型的模板
 
 当用户点击`创建话题`时, 将弹出选择器, 用户可以选择该模板填充进编辑器:
-<img width="601" height="385" alt="Screenshot from 2026-09-19 15-20-44" src="https://github.com/user-attachments/assets/0bbb7fac-ecc3-4333-ab16-61fcffc2ac08" />
+<img width="603" height="387" alt="Screenshot from 2026-09-19 15-23-59" src="https://github.com/user-attachments/assets/0cf32a25-948d-4193-a6fb-de3302f73d32" />
+
+
 
 ## 使用说明:
 ### 对于论坛管理员:
