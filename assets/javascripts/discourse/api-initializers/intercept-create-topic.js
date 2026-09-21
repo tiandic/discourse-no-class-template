@@ -9,6 +9,10 @@ export default apiInitializer("1.8.0", (api) => {
     return v === true || v === "true";
   };
 
+  function isDraft(opts) {
+    return "draft" in opts;
+  }
+
   api.modifyClass(
     "controller:composer",
     (Superclass) =>
@@ -16,7 +20,8 @@ export default apiInitializer("1.8.0", (api) => {
         open(opts) {
           if (
             opts?.action === "createTopic" &&
-            !isSkipTemplateSelector()) {
+            !isSkipTemplateSelector() &&
+            !isDraft(opts)) {
             modal.show(TopicTemplateSelector, {
               model: {
                 onSelect: (template) => {
