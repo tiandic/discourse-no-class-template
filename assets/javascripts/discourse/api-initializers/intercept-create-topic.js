@@ -4,7 +4,7 @@ import TopicTemplateSelector from "../components/modal/topic-template-selector.g
 export default apiInitializer("1.8.0", (api) => {
   const modal = api.container.lookup("service:modal");
 
-  function skipTemplateSelector() {
+  function isSkipTemplateSelector() {
     const v = api.getCurrentUser()?.custom_fields?.open_directly_with_no_template;
     return v === true || v === "true";
   };
@@ -16,7 +16,7 @@ export default apiInitializer("1.8.0", (api) => {
         open(opts) {
           if (
             opts?.action === "createTopic" &&
-            !skipTemplateSelector()) {
+            !isSkipTemplateSelector()) {
             modal.show(TopicTemplateSelector, {
               model: {
                 onSelect: (template) => {
